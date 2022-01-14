@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+file.txt -- MovingAveragesApp
+MovingAveragesApp --* CalcSMA
+CalcSMA --> Filter
+MovingAveragesApp --* MedFilter
+MedFilter --> Filter
+Filter --* DataInput
+Filter --* CreateMAWindow
+
+@enduml
