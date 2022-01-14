@@ -1,4 +1,5 @@
 public class CalcSMA extends Filter {
+    @Override
     public void calc() {
         for (int i = window; i <= size; i++) {
             for (int j = count1; j < count2; j++) {

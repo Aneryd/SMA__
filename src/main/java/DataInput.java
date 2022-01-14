@@ -8,7 +8,7 @@ public class DataInput {
         FileReader fileIn = null;
         ArrayList<Double> data = new ArrayList<>();
         try{
-            fileIn = new FileReader("C:\\Users\\Andrey\\Desktop\\Projects\\SMA__\\src\\main\\java\\file.txt");
+            fileIn = new FileReader(".\\src\\main\\java\\file.txt");
             Scanner scan = new Scanner(fileIn);
             while (scan.hasNextLine()){
                 data.add(scan.nextDouble());
