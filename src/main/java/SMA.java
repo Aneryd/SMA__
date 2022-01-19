@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class MovingAveragesApp {
+public class SMA {
     public static void main(String[] args) {
-        CalcSMA calcSMA = new CalcSMA();
+        CalculationSMA calcSMA = new CalculationSMA();
         calcSMA.calc();
-        MedFilter medFilter = new MedFilter();
-        medFilter.calc();
+        MedianFilter calcMedian = new MedianFilter();
+        calcMedian.calc();
     }
     public static int MAwindow(){
         System.out.println("Введите окно: ");

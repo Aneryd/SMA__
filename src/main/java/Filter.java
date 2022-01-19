@@ -14,7 +14,7 @@ public abstract class Filter {
     ArrayList<Double> sma = new ArrayList<>();
     ArrayList<Double> medfilter = new ArrayList<>();
     ArrayList<Double> supportList = new ArrayList<>();
-    int window = MovingAveragesApp.MAwindow();
+    int window = SMA.MAwindow();
     double sum = 0;
     int count1 = 0;
     int count2 = window;

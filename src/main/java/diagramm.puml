@@ -2,10 +2,17 @@
 'https://plantuml.com/sequence-diagram
 
 'file.txt -- MovingAveragesApp
-MovingAveragesApp ..> CalcSMA
-CalcSMA --> Filter
-MovingAveragesApp ..> MedFilter
-MedFilter --> Filter
-Filter ..> DataInput
+abstract Filter
+SMA ..> CalculationSMA
+SMA ..> DataInput
+SMA : main()
+SMA : MAwindow()
+CalculationSMA --> Filter
+CalculationSMA : calc()
+SMA ..> MedianFilter
+MedianFilter --> Filter
+MedianFilter : calc()
+Filter <.. DataInput
+DataInput : fileReader()
 
 @enduml

@@ -1,4 +1,4 @@
-public class CalcSMA extends Filter {
+public class CalculationSMA extends Filter {
     @Override
     public void calc() {
         for (int i = window; i <= size; i++) {
