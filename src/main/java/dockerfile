@@ -1,0 +1,8 @@
+FROM ubuntu
+FROM openjdk
+
+COPY . .
+
+RUN javac SMA.java
+
+CMD ["java", "SMA"]
